@@ -1,9 +1,7 @@
 server:
-  port: 82
+  port: 8002
 
 eureka:
-  instance:
-    hostname: localhost
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -12,7 +10,7 @@ eureka:
 
 spring:
   application:
-    name: gateWayService Manager
+    name: gateWayService_Manager
   cloud:
     gateway:
       routes:
