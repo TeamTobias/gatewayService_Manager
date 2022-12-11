@@ -12,7 +12,7 @@ eureka:
 
 spring:
   application:
-    name: gateWayService Manager
+    name: gateWayService_Manager
   cloud:
     gateway:
       routes:
