@@ -2,8 +2,6 @@ server:
   port: 82
 
 eureka:
-  instance:
-    hostname: localhost
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -24,3 +22,16 @@ spring:
           uri: lb://manager-service
           predicates:
             - Path=/manager-service/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+management:
+  endpoints:
+    web:
+    exposure:
+      include: "*"
+  endpoint:
+    health:
+    show-details: always
