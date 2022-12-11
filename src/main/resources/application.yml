@@ -22,3 +22,16 @@ spring:
           uri: lb://manager-service
           predicates:
             - Path=/manager-service/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+management:
+  endpoints:
+    web:
+    exposure:
+      include: "*"
+  endpoint:
+    health:
+    show-details: always
