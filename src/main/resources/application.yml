@@ -1,5 +1,5 @@
 server:
-  port: 82
+  port: 8002
 
 eureka:
   client:
@@ -10,7 +10,7 @@ eureka:
 
 spring:
   application:
-    name: gateWayService Manager
+    name: gateWayService_Manager
   cloud:
     gateway:
       routes:
